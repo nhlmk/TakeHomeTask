@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.972">
+    <testcase classname="Search functionality for UI tests" name="User can read the privacy policy from the search page in Turkish language" time="14.578">
+        <system-out>
+            <![CDATA[Given User is on the homepage...............................................passed
+When user clicks the privacy policy link....................................passed
+And user goes to the privacy policy page....................................passed
+And user clicks to the Turkish language link................................passed
+Then user sees the page in Turkish..........................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
