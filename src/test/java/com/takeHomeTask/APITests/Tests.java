@@ -50,7 +50,7 @@ public class Tests {
 
     @DisplayName("DELETE a pet")
     @Test
-    public void deleteTest(){
+    public void deletePetTest(){
         given()
                 .accept(ContentType.JSON)
                 .and().pathParam("petId", 1)
@@ -58,6 +58,20 @@ public class Tests {
                 .delete(baseUrl + "/pet/{petId}")
                 .then()
                 .statusCode(200)
+                .log().body();
+    }
+
+    @DisplayName("DELETE /user/{username}")
+    @Test
+    public void deleteUserTest(){
+        given()
+                .auth().basic("test", "abc123")
+                .and().accept(ContentType.JSON)
+                .and().pathParam("username", "user1")
+                .when()
+                .delete(baseUrl+ "/user/{username}")
+                .then()
+                .statusCode(404)
                 .log().body();
     }
 
