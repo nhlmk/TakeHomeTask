@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/takeHomeTask/stepDefinitions",
         dryRun = false,
-        tags = "@TC1UI"
+        tags = "@TC2UI"
 
 
 )
